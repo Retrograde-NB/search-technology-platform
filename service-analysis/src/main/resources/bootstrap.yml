@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: service-analysis
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+     #配置中心文件类型
+        file-extension: yml
+     #配置中心服务地址
+        server-addr: 192.168.150.7:8848,192.168.150.7:8849,192.168.150.7:8850
+     #配置中心编码
+        encode: utf-8
+        username: nacos
+        password: nacos
